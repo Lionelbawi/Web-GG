@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoodGame</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="title.png" rel="shortcut icon" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Nunito', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-image: url('BG.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        header {
+            background-color: #2f3036;
+            box-shadow: 0 2px 5px #ddd;
+            background-image: none;
+        }
+        .logo {
+            color: rgb(255, 255, 255);
+            font-size: 24px;
+            font-weight: bold;
+            padding: 15px 0;
+            float: left;
+        }
+        .nav-menu {
+            float: right;
+            list-style: none;
+            padding: 15px 0;
+        }
+        .nav-menu li {
+            display: inline;
+            margin-left: 20px;
+        }
+        .nav-menu a {
+            text-decoration: none;
+            color: white;
+        }
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .hero {
+            background-image: none;
+            padding: 250px 0;
+            color: white;
+        }
+        .hero-text {
+            width: 50%;
+            float: left;
+        }
+        .hero-image {
+            width: 50%;
+            float: right;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        section {
+            background: none;
+            padding: 40px 0;
+        }
+        section h2 {
+            text-align: center;
+        }
+        section h2, section h3 {
+            text-align: center;
+        }
+        #games {
+            color: white;
+        }
+        .game-card {
+            width: 30%;
+            margin: 1.5%;
+            float: left;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .game-card img {
+            width: 100%;
+        }
+        .game-card-content {
+            padding: 15px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .benefits {
+            color: #ddd;
+        }
+        .benefit-box {
+            width: 25%;
+            margin: 2%;
+            float: left;
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        @media (max-width: 768px) {
+            .benefit-box {
+                width: 100%;
+                margin: 0 0 20px 0;
+                float: none;
+            }
+        }
+        #order {
+            color: white;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-control {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+        textarea {
+            height: 100px;
+        }
+        .submit-btn {
+            background-color: #3050e0;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 30px 0;
+            background-image: none;
+        }
+        .footer-col {
+            width: 48%;
+            float: left;
+            margin-right: 2%;
+        }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 10px;
+            clear: both;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .hero-text, .hero-image, .game-card, .benefit-box, .footer-col {
+                width: 100%;
+                float: none;
+                margin-bottom: 20px;
+            }
+            .nav-menu {
+                display: none;
+            }
+            .benefit-box {
+                width: 100%;
+                margin: 0 0 20px 0;
+                float: none;
+            }
+        }
+        .slogan {
+            background-color: #e83333;
+        }
+        .footer-col a {
+            color: white;
+            font-size: 24px;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+        .footer-col a:hover {
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container clearfix">
+            <div class="logo">GoodGame</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#order">Order</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container clearfix">
+            <div class="hero-text">
+                <h1>GoodGame</h1>
+                <p style="font-size: x-large;">Di GoodGame, kami percaya bahwa game bukan hanya hiburan tapi juga alat edukasi, simulasi, dan inovasi. Kami siap bantu kamu membangun game edukatif, interaktif, dan seru untuk berbagai kebutuhan. Let’s gamify your vision! Cause you deserve a GoodGame.</p>
+            </div>
+            <div class="hero-image">
+                <img src="logo.png" alt="Game Mascot" style="width: 100%; max-width: 400px; height: auto;">
+            </div>
+        </div>
+    </section>
+    <section id="games">
+        <div class="container">
+            <h2>Our Games</h2>
+            <div class="clearfix">
+                <div class="game-card">
+                    <img src="barca.jpg" alt="Game 1">
+                    <div class="game-card-content">
+                        <h3>Adventure Quest</h3>
+                        <p>An epic journey through mystical lands.</p>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="4-0.png" alt="Game 2">
+                    <div class="game-card-content">
+                        <h3>Space Warriors</h3>
+                        <p>Defend the galaxy from alien invaders.</p>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="madridl.jpg" alt="Game 3">
+                    <div class="game-card-content">
+                        <h3>Puzzle Master</h3>
+                        <p>Challenge your brain with puzzles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <h2 style="color: #ddd;">Kenapa sih harus GoodGame?</h2>
+            <div class="clearfix">
+                <div class="benefit-box">
+                    <div>💡</div>
+                    <h3>Development Cepat</h3>
+                    <p>Proses pengembangan mulai dari 10 hari kerja. Kamu tinggal duduk manis, kami yang coding.</p>
+                </div>
+                <div class="benefit-box">
+                    <div>🎨</div>
+                    <h3>Harga Terjangkau</h3>
+                    <p>Dengan library internal dan workflow yang efisien, kami bisa bikin game keren tanpa bikin kantong kering.</p>
+                </div>
+                <div class="benefit-box">
+                    <div>⚡</div>
+                    <h3>Mudah untuk di-Kustomisasi</h3>
+                    <p>Mau ganti karakter, tema, atau mekanik? Bisa banget. Game kami fleksibel dan gampang disesuaikan sesuai kebutuhan brand atau event kamu..</p>
+                </div>
+                <div class="benefit-box">
+                    <div>💡</div>
+                    <h3>Dukungan Berkelanjutan</h3>
+                    <p>Setelah game selesai, kamu masih bisa dapet support untuk update, upgrade, atau konsultasi ide lanjutan.</p>
+                </div>
+                <div class="benefit-box">
+                    <div>⚡</div>
+                    <h3>Mudah untuk di-Kustomisasi</h3>
+                    <p>Mau ganti karakter, tema, atau mekanik? Bisa banget. Game kami fleksibel dan gampang disesuaikan sesuai kebutuhan brand atau event kamu..</p>
+                </div>
+                <div class="benefit-box">
+                    <div>💡</div>
+                    <h3>Dukungan Berkelanjutan</h3>
+                    <p>Setelah game selesai, kamu masih bisa dapet support untuk update, upgrade, atau konsultasi ide lanjutan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="order">
+        <div class="container">
+            <h2>Calling Calling</h2>
+            <div class="contact-form">
+                <form action="https://formspree.io/f/your-formspree-id" method="POST">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="clearfix">
+                <div class="footer-col">
+                    <h3>GoodGame</h3>
+                    <p>Cause you deserve a GoodGame.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <a href="https://www.instagram.com/goodgame.dev?igsh=eDdsdnJjcTU0bWhy&utm_source=qr" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GoodGame</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

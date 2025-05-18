@@ -225,24 +225,24 @@
             <h2>Our Games</h2>
             <div class="clearfix">
                 <div class="game-card">
-                    <img src="barca.jpg" alt="Game 1">
+                    <img src="Cars_the_video_game_cover.webp" alt="Game 1">
                     <div class="game-card-content">
-                        <h3>Adventure Quest</h3>
-                        <p>An epic journey through mystical lands.</p>
+                        <h3>Cars Game</h3>
+                        <p>An racing game simulator for fun.</p>
                     </div>
                 </div>
                 <div class="game-card">
-                    <img src="4-0.png" alt="Game 2">
+                    <img src="gta-6-1197614347.webp" alt="Game 2">
                     <div class="game-card-content">
-                        <h3>Space Warriors</h3>
-                        <p>Defend the galaxy from alien invaders.</p>
+                        <h3>GTA VI</h3>
+                        <p>Role play game with sigma aura.</p>
                     </div>
                 </div>
                 <div class="game-card">
-                    <img src="madridl.jpg" alt="Game 3">
+                    <img src="tif.avif" alt="Game 3">
                     <div class="game-card-content">
-                        <h3>Puzzle Master</h3>
-                        <p>Challenge your brain with puzzles.</p>
+                        <h3>Thief Simulator</h3>
+                        <p>Wanna be robber? of course you can.</p>
                     </div>
                 </div>
             </div>
@@ -289,7 +289,7 @@
         <div class="container">
             <h2>Calling Calling</h2>
             <div class="contact-form">
-                <form action="https://formspree.io/f/your-formspree-id" method="POST">
+                <form name="submit-to-google-sheet">
                     <div class="form-group">
                         <input type="text" class="form-control" name="name" placeholder="Your Name" required>
                     </div>
@@ -309,6 +309,17 @@
             </div>
         </div>
     </section>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwfPF3oILpVX1P7ExPQeNp33Xu--8_Y_KxqBuIFaAxKbZVvA7tQIeWxrYl0xjnaM_zwjg/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
     <footer>
         <div class="container">
             <div class="clearfix">
